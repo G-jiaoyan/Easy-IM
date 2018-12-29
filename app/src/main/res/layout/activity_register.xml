@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/login_bk1"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_margin="20dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/avatar5"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <!--inputType="text"
+        android:imeOptions="actionNext" 输入法选项
+        点击会跑到下一个控件的焦点-->
+    <EditText
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:id="@+id/et_username_register"
+        android:hint="@string/username"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:inputType="numberPassword"
+        android:imeOptions="actionGo"
+        android:id="@+id/et_pwd_register"
+        android:hint="@string/password"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <!--android:textAllCaps="true" true为所有字母大写 false则所有小写-->
+    <!--android:textColor="#ffffff" 正规写法 #fff若国际化容易导致不兼容-->
+    <Button
+        android:id="@+id/btn_register"
+        android:background="@drawable/btn_login_selector"
+        android:layout_margin="10dp"
+        android:text="注册"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

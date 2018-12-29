@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.ChatActivity">
+
+    <include layout="@layout/header"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <EditText
+            android:inputType="text"
+            android:imeOptions="actionSend"
+            android:id="@+id/et_msg_chat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:hint="消息"/>
+        <Button
+            android:enabled="false"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_send_selector"
+            android:id="@+id/btn_send_chat"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:text="发送"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

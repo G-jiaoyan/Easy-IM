@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.ContactsFragment">
+
+    <include layout="@layout/header"/>
+
+    <com.example.g_jiaoyan.qq_hx.widget.ContactListView
+        android:id="@+id/contactListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.example.g_jiaoyan.qq_hx.widget.ContactListView>
+
+
+</LinearLayout>
